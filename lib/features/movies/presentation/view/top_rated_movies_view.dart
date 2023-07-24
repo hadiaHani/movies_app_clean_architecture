@@ -6,6 +6,7 @@ import 'package:movies_app/core/cache/cache.dart';
 import 'package:movies_app/core/resourses/manager_color.dart';
 import 'package:movies_app/core/resourses/manager_fonts.dart';
 import 'package:movies_app/core/resourses/manager_size.dart';
+import 'package:movies_app/core/resourses/manager_strings.dart';
 import 'package:movies_app/core/resourses/manager_styles.dart';
 import 'package:movies_app/features/movies/presentation/contoller/home_controller.dart';
 import 'package:movies_app/routes/routes.dart';
@@ -27,7 +28,7 @@ class TopRatedMoviesView extends StatelessWidget {
             Get.back();
           },
         ),
-        title: const Text(AppString.topRatedMovies),
+        title: const Text(ManagerStrings.topRatedMovies),
       ),
       body: GetBuilder<HomeController>(
         builder: (controller) {

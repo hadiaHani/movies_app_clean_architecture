@@ -6,6 +6,7 @@ import 'package:movies_app/config/constant.dart';
 import 'package:movies_app/core/resourses/manager_color.dart';
 import 'package:movies_app/core/resourses/manager_fonts.dart';
 import 'package:movies_app/core/resourses/manager_size.dart';
+import 'package:movies_app/core/resourses/manager_strings.dart';
 import 'package:movies_app/core/resourses/manager_styles.dart';
 import 'package:movies_app/features/movies_detailes/domain/model/movie_detailes_model.dart';
 import 'package:movies_app/features/movies_detailes/presentation/contoller/movies_detailes_controller.dart';
@@ -140,7 +141,7 @@ class MovieDetailContent extends StatelessWidget {
                       ),
                       SizedBox(height: ManagerHeight.h8),
                       Text(
-                        '${AppString.genres}: ${_showGenres(controller.genres)}',
+                        '${ManagerStrings.genres}: ${_showGenres(controller.genres)}',
                         style: getMediumStyle(
                           color: Colors.white70,
                           fontSize: ManagerFontSize.s14,
@@ -159,7 +160,7 @@ class MovieDetailContent extends StatelessWidget {
                   from: 20,
                   duration: const Duration(milliseconds: 500),
                   child: Text(
-                    AppString.moreLikeThis,
+                    ManagerStrings.moreLikeThis,
                     style: getMediumStyle(
                         fontSize: ManagerFontSize.s18,
                         color: ManagerColors.white),

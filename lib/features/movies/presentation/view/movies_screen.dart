@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:movies_app/config/constant.dart';
 import 'package:movies_app/core/resourses/manager_color.dart';
 import 'package:movies_app/core/resourses/manager_fonts.dart';
 import 'package:movies_app/core/resourses/manager_size.dart';
+import 'package:movies_app/core/resourses/manager_strings.dart';
 import 'package:movies_app/core/resourses/manager_styles.dart';
 import 'package:movies_app/features/movies/presentation/contoller/home_controller.dart';
 import 'package:movies_app/features/movies/presentation/view/widgets/now_playing_component.dart';
@@ -31,7 +31,7 @@ class MoviesScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        AppString.popular,
+                        ManagerStrings.popular,
                         style: getMediumStyle(
                           fontSize: ManagerFontSize.s20,
                           color: ManagerColors.white,
@@ -49,7 +49,7 @@ class MoviesScreen extends StatelessWidget {
                           child: Row(
                             children: [
                               Text(
-                                AppString.seeMore,
+                                ManagerStrings.seeMore,
                                 style: getMediumStyle(
                                   fontSize: ManagerFontSize.s16,
                                   color: ManagerColors.white,
@@ -78,7 +78,7 @@ class MoviesScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(AppString.topRated,
+                      Text(ManagerStrings.topRated,
                           style: getMediumStyle(
                             fontSize: ManagerFontSize.s20,
                             color: ManagerColors.white,
@@ -95,7 +95,7 @@ class MoviesScreen extends StatelessWidget {
                           child: Row(
                             children: [
                               Text(
-                                AppString.seeMore,
+                                ManagerStrings.seeMore,
                                 style: getMediumStyle(
                                   fontSize: ManagerFontSize.s16,
                                   color: ManagerColors.white,
