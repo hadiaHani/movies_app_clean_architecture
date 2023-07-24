@@ -6,7 +6,6 @@ import 'package:internet_connection_checker_plus/internet_connection_checker_plu
 import 'package:movies_app/core/internet_checker/internet_checker.dart';
 import 'package:movies_app/core/network/app_api.dart';
 import 'package:movies_app/core/network/dio_factory.dart';
-import 'package:movies_app/core/storage/local/app_settings_shared_preferences.dart';
 import 'package:movies_app/features/movies/data/data_source/movie_data_source.dart';
 import 'package:movies_app/features/movies/data/data_source/popular_movie_data_source.dart';
 import 'package:movies_app/features/movies/data/data_source/top_rated_movie_data_source.dart';
@@ -41,9 +40,6 @@ initModule() async {
   instance.registerLazySingleton<SharedPreferences>(
     () => sharedPreferences,
   );
-
-  instance.registerLazySingleton<AppSettingsSharedPreferences>(
-      () => AppSettingsSharedPreferences(instance()));
 
   instance.registerLazySingleton(() => DioFactory());
 
