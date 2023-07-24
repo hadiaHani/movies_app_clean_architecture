@@ -65,15 +65,3 @@ class ApiConstants {
   static const String applicationJson = 'application/json';
   static const String fcmToken = 'fcm_token';
 }
-
-class AppString {
-  static const appName = "Movies App";
-  static const popular = "Popular";
-  static const popularMovies = "Popular Movies";
-  static const topRatedMovies = "Top Rated Movies";
-
-  static const seeMore = "See More";
-  static const topRated = "Top Rated";
-  static const genres = "Genres";
-  static const moreLikeThis = "More like this";
-}
